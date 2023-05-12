@@ -1,0 +1,393 @@
+.payment {
+  padding: 16px;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .userInfo {
+      width: 50%;
+      padding: 8px;
+      p {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Nunito";
+        font-size: 15px;
+        height: max-content;
+        s {
+          max-width: 50%;
+          overflow-x: auto;
+          text-decoration: none;
+          display: flex;
+          &::-webkit-scrollbar {
+            background: #535353;
+            height: 2px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #ff8a3c;
+            border-radius: 5px;
+          }
+          b {
+            font-weight: normal;
+            color: #fff9;
+            padding: 0 4px;
+            font-size: 12px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background: #0004;
+            border-radius: 5px;
+          }
+        }
+        span {
+          color: #fff9;
+          font-weight: 500;
+        }
+      }
+    }
+    .payDetails {
+      width: 45%;
+      padding: 8px;
+      p {
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        font-family: "Nunito";
+        font-size: 15px;
+        height: max-content;
+        s {
+          max-width: 60%;
+          overflow-x: auto;
+          text-decoration: none;
+          display: flex;
+          &::-webkit-scrollbar {
+            background: #535353;
+            height: 2px;
+          }
+          &::-webkit-scrollbar-thumb {
+            background: #ff8a3c;
+            border-radius: 5px;
+          }
+          b {
+            font-weight: normal;
+            color: #fff9;
+            padding: 0 4px;
+            font-size: 12px;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background: #0004;
+            border-radius: 5px;
+          }
+        }
+        span {
+          color: #fff9;
+          font-weight: 500;
+        }
+      }
+      .warning {
+        color: #ffdb3a;
+        align-items: center;
+        justify-content: center;
+        i {
+          color: #ffdb3a;
+          font-size: 18px;
+          margin-right: 8px;
+        }
+      }
+      .paymentDetails {
+        display: flex;
+        flex-direction: column;
+        margin-top: auto;
+        span {
+          font-weight: 500;
+          text-align: center;
+          margin-bottom: 4px;
+        }
+        b {
+          font-weight: 600;
+          padding: 4px 8px;
+          margin-top: 4px;
+          background: #3fa2ff;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: 0.1s;
+          user-select: none;
+          font-size: 12px;
+          display: flex;
+          s {
+            display: flex;
+            text-decoration: none;
+            width: calc(100% - 23px);
+            overflow-x: auto;
+            &::-webkit-scrollbar {
+              background: #535353;
+              height: 2px;
+            }
+            &::-webkit-scrollbar-thumb {
+              background: #ff8a3c;
+              border-radius: 5px;
+            }
+          }
+          i {
+            width: 15px;
+            text-align: center;
+            margin-left: 8px;
+          }
+          &:active {
+            background: #3fff3f;
+          }
+        }
+      }
+    }
+  }
+  .paidBtn {
+    display: flex;
+    margin: 15px auto;
+    padding: 12px 0;
+    width: 320px;
+    font-size: 20px;
+    justify-content: center;
+    border-radius: 5px;
+    background: #ff8a3c;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    &:hover {
+      background: #ff8a3cc5;
+    }
+  }
+  .paid {
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+      i {
+        margin-right: 8px;
+        color: #3fff3f;
+        font-size: 24px;
+      }
+    }
+    button {
+      display: flex;
+      margin: 15px auto;
+      padding: 12px 0;
+      width: 320px;
+      font-size: 20px;
+      justify-content: center;
+      border-radius: 5px;
+      background: #ff8a3c;
+      cursor: pointer;
+      font-weight: 600;
+      transition: 0.2s;
+      &:hover {
+        background: #ff8a3cc5;
+      }
+    }
+  }
+}
+.timer {
+  display: flex;
+  align-items: center;
+  .cancel {
+    margin-right: 12px;
+    color: rgb(255, 50, 50);
+    font-size: 28px;
+    cursor: pointer;
+  }
+  .time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background: #3485ff;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: 0 0 1px 3px #888;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .payment {
+    padding: 12px;
+    .userInfo {
+      width: 50%;
+      padding: 8px;
+      p {
+        margin: 8px 0;
+        font-size: 14px;
+        height: max-content;
+        white-space: nowrap;
+        s {
+          max-width: 50%;
+          b {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .payDetails {
+      width: 45%;
+      padding: 8px;
+      p {
+        margin: 8px 0;
+        font-size: 14px;
+        s {
+          b {
+            padding: 0 4px;
+            font-size: 12px;
+          }
+        }
+      }
+      .warning {
+        i {
+          font-size: 16px;
+          margin-right: 8px;
+        }
+      }
+      .paymentDetails {
+        span {
+          margin-bottom: 4px;
+        }
+        b {
+          padding: 4px 8px;
+          margin-top: 4px;
+          font-size: 12px;
+          i {
+            width: 15px;
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+    .paidBtn {
+      margin: 12px auto;
+      padding: 10px 0;
+      width: 320px;
+      font-size: 18px;
+    }
+    .paid {
+      span {
+        font-size: 16px;
+        margin-bottom: 16px;
+        i {
+          margin-right: 8px;
+          font-size: 22px;
+        }
+      }
+      button {
+        margin: 12px auto;
+        padding: 10px 0;
+        width: 320px;
+        font-size: 18px;
+      }
+    }
+  }
+  .timer {
+    display: flex;
+    .cancel {
+      font-size: 24px;
+    }
+    .time {
+      width: 50px;
+      height: 50px;
+      font-size: 16px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .payment {
+      padding: 4px;
+      .wrapper {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .userInfo {
+          min-width: 290px;
+          width: 50%;
+          padding: 4px;
+          p {
+            margin: 8px 0;
+            font-size: 12px;
+            height: max-content;
+            white-space: nowrap;
+            s {
+              max-width: 50%;
+              b {
+                font-size: 11px;
+              }
+            }
+          }
+        }
+        .payDetails {
+          min-width: 290px;
+          width: 45%;
+          padding: 4px;
+          p {
+            margin: 8px 0;
+            font-size: 12px;
+            s {
+              b {
+                padding: 0 4px;
+                font-size: 11px;
+              }
+            }
+          }
+          .warning {
+            i {
+              font-size: 14px;
+              margin-right: 8px;
+            }
+          }
+          .paymentDetails {
+            span {
+              margin-bottom: 4px;
+            }
+            b {
+              padding: 4px 8px;
+              margin-top: 4px;
+              font-size: 11px;
+              i {
+                width: 14px;
+                margin-left: 8px;
+              }
+            }
+          }
+        }
+      }
+      .paidBtn {
+        margin: 12px auto;
+        padding: 10px 0;
+        width: 320px;
+        font-size: 16px;
+      }
+      .paid {
+        span {
+          font-size: 14px;
+          margin-bottom: 12px;
+          i {
+            margin-right: 8px;
+            font-size: 20px;
+          }
+        }
+        button {
+          margin: 12px auto;
+          padding: 10px 0;
+          width: 320px;
+          font-size: 16px;
+        }
+      }
+    }
+    .timer {
+      margin-top: 8px;
+      display: flex;
+      .time {
+        width: 44px;
+        height: 44px;
+        font-size: 15px;
+      }
+    }
+  }
+}

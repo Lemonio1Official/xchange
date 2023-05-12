@@ -1,0 +1,104 @@
+.about {
+  width: 75%;
+  margin: 16px auto;
+  flex: 1;
+  .title {
+    font-family: "Nunito";
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    span {
+      display: block;
+      width: 60%;
+      font-size: 24px;
+      font-weight: 500;
+    }
+    i {
+      font-size: 120px;
+      color: #3fa2ff;
+    }
+  }
+  .desc {
+    border-radius: 5px;
+    margin: 40px 0;
+    height: max-content;
+    display: flex;
+    background-image: url("https://aussiedlerbote.de/wp-content/uploads/2022/05/kriptovalyuta-kak-investiciya-otlichitelnye-cherty-cifrovyx-aktivov-shutterstock-scaled-e1651487122190.jpg");
+    span {
+      position: relative;
+      display: block;
+      width: 50%;
+      height: max-content;
+      background: rgba(49, 49, 49, 0.95);
+      padding: 12px;
+      left: 40%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .about {
+    width: 90%;
+    margin: 12px auto;
+    .title {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    .entry {
+      margin-bottom: 16px;
+      span {
+        width: 75%;
+        font-size: 18px;
+      }
+      i {
+        font-size: 72px;
+      }
+    }
+    .desc {
+      margin: 24px 0;
+      span {
+        width: 75%;
+        padding: 8px;
+      }
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .about {
+      width: 100%;
+      .title {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      .entry {
+        padding: 8px;
+        margin-bottom: 12px;
+        span {
+          width: 85%;
+          font-size: 14px;
+        }
+        i {
+          font-size: 48px;
+        }
+      }
+      .desc {
+        margin: 20px 0;
+        border-radius: 0px;
+        span {
+          width: 85%;
+          padding: 8px;
+          font-size: 12px;
+          left: 46%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,255 @@
+.reviews {
+  width: 75%;
+  margin: 16px auto;
+  flex: 1;
+  .title {
+    font-family: "Nunito";
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  ul {
+    border-radius: 5px;
+    max-height: 475px;
+    overflow-y: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    &::-webkit-scrollbar {
+      background: #535353;
+      width: 4px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #ff8a3c;
+      border-radius: 5px;
+    }
+    li {
+      position: relative;
+      margin: 8px 0;
+      padding: 16px;
+      padding-bottom: 20px;
+      background: #0002;
+      border-radius: 5px;
+      div {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+        margin-bottom: 4px;
+        font-weight: 600;
+        font-family: "Nunito";
+        i {
+          padding: 4px;
+          &.active {
+            color: #3fa2ff;
+          }
+        }
+      }
+      .comment {
+        display: block;
+        margin-bottom: 10px;
+      }
+      b {
+        position: absolute;
+        right: 8px;
+        bottom: 8px;
+        font-size: 14px;
+        color: #fff9;
+      }
+    }
+  }
+  .addreview {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 24px auto;
+    padding: 16px;
+    box-sizing: content-box;
+    background: #0002;
+    border-radius: 5px;
+    input {
+      background: none;
+      padding: 8px;
+      border-bottom: 2px solid #999;
+      font-size: 16px;
+      margin: 8px 0 16px;
+      &:focus {
+        border-bottom: 2px solid #ff8a3c;
+      }
+      &.err {
+        border-bottom: 2px solid #ff6e6e;
+      }
+    }
+    span {
+      margin-bottom: 8px;
+      color: #fff9;
+    }
+    textarea {
+      padding: 8px;
+      border-radius: 5px;
+      background: #0004;
+      resize: none;
+      margin-bottom: 12px;
+      font-size: 16px;
+      &:focus {
+        box-shadow: 0 0 2px 1px #ff8a3c9d;
+      }
+      &.err {
+        box-shadow: 0 0 2px 1px #ff6e6e;
+      }
+    }
+    .stars {
+      display: flex;
+      justify-content: center;
+      i {
+        padding: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        &.active {
+          color: #3fa2ff;
+        }
+      }
+    }
+  }
+  .add {
+    margin: 8px auto 4px;
+    padding: 12px 0;
+    width: 320px;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background: #ff8a3c;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
+    &:hover {
+      background: #ff8a3cc5;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .reviews {
+    width: 80%;
+    margin: 12px auto;
+    .title {
+      font-size: 24px;
+      margin-bottom: 16px;
+    }
+    ul {
+      &::-webkit-scrollbar {
+        background: #535353;
+        width: 3px;
+      }
+      li {
+        margin: 8px 0;
+        padding: 12px;
+        padding-bottom: 16px;
+        background: #0002;
+        border-radius: 5px;
+        div {
+          font-size: 18px;
+        }
+        .comment {
+          margin-bottom: 8px;
+        }
+        b {
+          font-size: 14px;
+          bottom: 4px;
+        }
+      }
+      span {
+        font-size: 14px;
+      }
+    }
+    .addreview {
+      width: 75%;
+      margin: 12px auto;
+      margin-bottom: 0;
+      padding: 16px;
+      input {
+        padding: 6px;
+        font-size: 14px;
+        margin: 8px 0 12px;
+      }
+      span {
+        margin-bottom: 6px;
+      }
+      textarea {
+        padding: 8px;
+        margin-bottom: 8px;
+        font-size: 14px;
+      }
+      .stars {
+        i {
+          padding: 6px;
+          font-size: 18px;
+        }
+      }
+    }
+    .add {
+      margin: 8px auto 4px;
+      padding: 8px 0;
+      width: 240px;
+      font-size: 18px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .reviews {
+      width: 90%;
+      margin: 12px auto;
+      .title {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      ul {
+        li {
+          margin: 6px 0;
+          padding: 8px;
+          padding-bottom: 12px;
+          background: #0002;
+          border-radius: 5px;
+          div {
+            font-size: 14px;
+          }
+          .comment {
+            margin-bottom: 6px;
+          }
+          b {
+            font-size: 12px;
+            bottom: 4px;
+          }
+          span {
+            font-size: 12px;
+          }
+        }
+      }
+      .addreview {
+        width: 90%;
+        padding: 12px;
+        input {
+          padding: 6px;
+          font-size: 12px;
+          margin: 8px 0;
+        }
+        textarea {
+          padding: 6px;
+          margin-bottom: 6px;
+          font-size: 12px;
+        }
+        .stars {
+          i {
+            padding: 6px;
+            font-size: 16px;
+          }
+        }
+      }
+      .add {
+        margin: 8px auto 4px;
+        padding: 6px 0;
+        width: 240px;
+        font-size: 14px;
+      }
+    }
+  }
+}
